@@ -1,0 +1,41 @@
+/* 媒体查询 */
+@media (min-width:481px) {
+    .container .left-column {
+    width:248px;
+    z-index:100;
+    height:100vh;
+    display:flex;
+    background:#30333c;
+    box-sizing:border-box;
+    flex-direction:column;
+    color:#6b7386
+}
+@media (max-width:480px) {
+    .container .left-column {
+    transform:translateZ(0);
+    position:fixed;
+    z-index:1000;
+    width:100%;
+    top:0;
+    padding:0
+}
+@media (min-width:481px) {
+    .container .main .fe .item {
+    width:80%
+}
+}
+@media (min-width:768px) {
+    .container .main .fe .item {
+    width:43%
+}
+}
+@media (min-width:1040px) {
+    .container .main .fe .item {
+    width:28%
+}
+}
+@media (min-width:1200px) {
+    .container .main .fe .item {
+    width:20%
+}
+}

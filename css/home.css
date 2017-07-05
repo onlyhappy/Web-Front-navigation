@@ -1,0 +1,240 @@
+/* css格式化 */
+html,body,ul,ol,dl,dt,dd,li,h1,h2,h3,h4,h5,h6,span,p{
+	margin:0;
+	padding:0;
+}
+a{
+    text-decoration:none;
+    color:#000;
+}
+ul{
+	list-style:none;
+}
+div{
+	display: block;
+}
+body {
+	font-size:12px;
+	color:#4d4d4d;
+	min-height:100vh;
+	background:#f3f6f8;
+	font-family: "微软雅黑"	
+}
+
+/* css样式 */
+.left-column{
+     position: fixed;
+     padding:0 24px;
+     z-index: 1000;
+     display: block;
+   }
+   /* logo */
+   .left-column .title{
+     color:#fff;
+     font-size: 18px;
+     height: 50px;
+     line-height: 50px;
+   }
+   .left-column .title p{
+     text-align:center;
+   }
+   .container .left-column .nav .item .hengang {
+      position:absolute;
+      height:24px;
+      right:0;
+      top:11px
+    }
+    .left-column .nav {
+	flex:1;
+	overflow:hidden;
+	-webkit-overflow-scrolling:touch;
+	-webkit-box-flex:1;
+	-ms-flex-positive:1;
+	flex-grow:1
+    }
+   .left-column .nav .item:hover .hengang {
+      background:#494f5e
+    }
+    .left-column .nav .item.active .hengang {
+      background:red;
+    }
+   .left-column .nav li.active,.left-column .nav li:hover {
+      cursor:pointer
+    }
+   .left-column .nav li.active a,.left-column .nav li.active i,.left-column .nav li:hover a,.container .left-column .nav li:hover i {
+      color:#fff;
+    }
+    /* shang */
+   .left-column .nav .itema{
+     height: 48px;
+     line-height: 46px;
+     border-top:2px solid #383B44;
+     border-bottom:2px solid #383B44;              
+   }
+   .left-column .nav .msg-board{
+   	 position: fixed;
+   	 bottom: 1px;
+   	 background: #30333c;
+   	 color:#6b7386;
+   	 display: block;
+   	 width:200px;
+   }
+   .container .left-column .nav .msg-board .arrow {
+	position:absolute;
+	right:0;
+	top:0;
+	cursor:pointer
+   }
+   .left-column .nav .item a{
+     color:#fff;
+     display: inline-block;
+     width:100%;
+   }
+   .left-column .nav li a{
+     color:#6b7386;
+     width:100%;
+     display: inline-block;
+   }
+   .left-column .nav .item i{
+     margin-right: 10px;
+   }
+   /* zhong */
+   .left-column .nav-item li{
+     height:32px;
+     line-height: 32px;
+     padding-left: 20px;
+   }
+   .left-column .nav-item i{
+     padding-right: 15px;
+   }
+   .left-column .nav-item .arrow{
+     position: absolute;
+     padding-right: 4px;
+   }
+   /* 主体部分 */           
+   .container .main {
+    display: -webkit-box;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-left: 248px;
+   }
+     .container .main .fe {
+      overflow: hidden;
+      background:#fff;
+      margin: 20px 30px;
+      padding-bottom: 20px;
+    }
+    .container .main .fe .sub>div {
+      padding: 12px 0 0 2.1%;
+      font-size: 18px;
+    }
+    .container .main .fe .sub>div i {
+      font-size: 18px;
+    }
+   .container .main .fe:last-child {
+        margin-bottom:35px
+    }
+    .container .main .fe .item {
+      border-radius: 6px;
+      background: #fff;
+      padding: 10px;
+      width: 20%;
+      min-width: 200px;
+      margin: 22px 0 0 2.1%;
+      float: left;
+      overflow: hidden;
+      border: 1px solid #e4ecf3;
+      box-shadow: 1px 2px 3px #f2f6f8;
+    }
+    .container .main .fe .logo{
+        height: 40px;
+        position: relative;
+        font-size: 14px;
+        font-weight: 700;
+        color:#3273dc;
+        overflow:hidden;
+        white-space: nowrap;
+        text-overflow:ellipsis;
+        padding:0 0.1rem;
+    }
+    .container .main .fe .logo img{
+        width:40px;
+        height: 40px;
+        border-radius:50%;
+        vertical-align:middle;
+    }
+    .container .main .fe .item .desc{
+        color: gray;
+        font-size: 12px;
+        padding-top: 10px;
+        height: 35px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+    }
+    .container .main #qianduan .item .title {
+          text-align: center;
+          margin-bottom: 0;
+          margin-left: 0;
+      }
+    .container .main #qianduan .item .logo {
+        overflow: auto;
+        float: none;
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        text-align: center;
+        padding: 0;
+    }
+    .abc{
+        color:#fff;
+    }
+    .container .main #qianduan .item .desc {
+        height: 20px;
+        margin-top: 0;
+        margin-bottom: 18px;
+        text-align: center;
+    }
+    .container .main #qianduan .item .logo img {
+        width: 127px;
+        height: 127px;
+        border-radius: 0;
+    }
+    .container .main #qianduan .item .desc p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 96%;
+    }
+    /* 动态效果 */
+    .main .fe .item:hover {
+      transform:translateY(-5px);
+      box-shadow:0 26px 40px -24px rgba(0,36,100,.3);
+      transition:all .3s ease;
+    }
+    .container .footer{
+      width:100%;
+      bottom:0;
+      line-height: 45px;
+      background: #fff;
+      box-shadow:0 0 1rem rgba(0,0,0,0.2);
+    }
+    .container .footer .copyright {
+        margin-left: 30px;
+        color: #949494;
+        font-size: 12px;
+    }
+    .container .footer .copyright a {
+        color: #3a85ff;
+    }
+    .container .left-bar .nav .item.msg-board {
+        position:fixed;
+        z-index:100;
+        bottom:1000px;
+        width:200px;
+        background:#30333c
+    }
